@@ -10,7 +10,7 @@ const SERVICES = [
     title: 'Motorcycle Delivery',
     desc: 'Our fastest option for small to medium packages within Arusha city. Ideal for documents, food, and everyday parcels.',
     time: '15 – 45 min',
-    price: 'From TSh 5,000',
+    price: 'From TSh 2,000',
   },
   {
     icon: Truck,

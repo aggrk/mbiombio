@@ -99,7 +99,7 @@ export default function Header() {
 
           {/* CTA */}
           <Link
-            href="/track"
+            href="/order"
             className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 bg-primary text-black text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
           >
             Place Order

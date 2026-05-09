@@ -1,13 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Users, Award, Clock } from 'lucide-react';
+import { MapPin,PhoneCall, Shield, Clock } from 'lucide-react';
 
 const STATS = [
-  { icon: Users,  value: '1,200+',       label: 'Happy customers' },
-  { icon: Clock,  value: '15 min',        label: 'Avg. pickup time' },
-  { icon: MapPin, value: 'Arusha & Moshi', label: 'Areas covered' },
-  { icon: Award,  value: '4.9 / 5',       label: 'Customer rating' },
+   { icon: Clock,     title: '15-min pickup',    desc: 'Target pickup time in Arusha' },
+  { icon: MapPin,    title: 'Arusha-based',     desc: 'Riders who know every street' },
+   { icon: Shield,    title: 'Handled with care', desc: 'Every package, every time' },
+   { icon: PhoneCall, title: 'WhatsApp orders',  desc: 'Order in seconds, no app needed' },
 ];
 
 export default function About() {
@@ -82,9 +82,9 @@ export default function About() {
                   <stat.icon size={17} className="text-primary" />
                 </div>
                 <div className="heading text-2xl font-bold text-text mb-1">
-                  {stat.value}
+                  {stat.title}
                 </div>
-                <p className="text-sm text-text-secondary">{stat.label}</p>
+                <p className="text-sm text-text-secondary">{stat.desc}</p>
               </motion.div>
             ))}
           </div>

@@ -54,7 +54,7 @@ export default function Home() {
                 className="flex flex-wrap gap-3"
               >
                 <Link
-                  href="/track"
+                  href="/order"
                   className="px-6 py-3 bg-primary text-black font-semibold rounded-md hover:opacity-90 transition-opacity"
                 >
                   Place an Order
@@ -224,7 +224,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
-              href="/track"
+              href="/order"
               className="px-7 py-3 bg-black text-white font-semibold rounded-md hover:opacity-90 transition-opacity"
             >
               Place an Order

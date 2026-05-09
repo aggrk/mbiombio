@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Bike, Truck, Users, MapPin, Package, CheckCircle } from 'lucide-react';
 
-// ── Replace with your actual Formspree form ID ──────────────
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnjwgyky';
 
 const VEHICLE_OPTIONS = [
   {
@@ -212,7 +211,6 @@ export default function PlaceOrder() {
                   Vehicle type
                 </h2>
 
-                {/* Hidden input carries the selected value to Formspree */}
                 <input type="hidden" name="vehicle_type" value={vehicle} />
 
                 <div className="grid md:grid-cols-3 gap-3">
@@ -272,9 +270,16 @@ export default function PlaceOrder() {
               <button
                 type="submit"
                 disabled={formState === 'submitting'}
-                className="w-full py-3.5 bg-primary text-black font-semibold rounded-md hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+                className="w-full py-3.5 bg-primary text-black font-semibold rounded-md hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed text-sm flex items-center justify-center gap-2"
               >
-                {formState === 'submitting' ? 'Placing order…' : 'Place Order'}
+                {formState === 'submitting' ? (
+                  <>
+                    <span className="w-3.5 h-3.5 border border-black/30 border-t-black rounded-full animate-spin" />
+                    Placing order…
+                  </>
+                ) : (
+                  'Place Order'
+                )}
               </button>
 
               <p className="text-center text-xs text-text-secondary">

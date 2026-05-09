@@ -35,7 +35,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-text-secondary leading-relaxed">
-              Mbiombio delivery across Arusha and Northern Tanzania.
+              Fast delivery across Arusha and Northern Tanzania.
               Fast, reliable, and handled with care.
             </p>
           </div>
@@ -71,11 +71,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+255000000000"
+                  href="tel:+255758689802"
                   className="flex items-center gap-2.5 text-sm text-text-secondary hover:text-text transition-colors"
                 >
                   <Phone size={15} className="shrink-0 text-primary" />
-                  <span>+255 000 000 000</span>
+                  <span>+255 758 689 802</span>
                 </a>
               </li>
               <li>
@@ -84,7 +84,7 @@ export default function Footer() {
                   className="flex items-center gap-2.5 text-sm text-text-secondary hover:text-text transition-colors"
                 >
                   <Mail size={15} className="shrink-0 text-primary" />
-                  <span>info@mbiombio.co.tz</span>
+                  <span>mbiombiodelivery@gmail.com</span>
                 </a>
               </li>
             </ul>
