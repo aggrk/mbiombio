@@ -46,22 +46,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5" aria-label="MbioMbio Home">
-          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center shrink-0">
-            <Package size={16} className="text-black" strokeWidth={2.5} />
-          </div>
-          <div className="leading-none">
-            <span
-              className="block text-[17px] font-semibold tracking-tight text-text"
-              style={{ fontFamily: 'var(--font-poppins), sans-serif' }}
-            >
-              MbioMbio
-            </span>
-            <span className="block text-[9px] font-medium tracking-[0.18em] text-text-secondary uppercase mt-0.5">
-              Delivery
-            </span>
-          </div>
-        </Link>
+       <Link href="/" className="flex items-center gap-3" aria-label="MbioMbio Home">
+  <div className="w-14 h-14 shrink-0 rounded-lg overflow-hidden bg-white p-1">
+    <img
+      src="/images/logo.png"
+      alt="MbioMbio Delivery"
+      className="w-full h-full object-contain drop-shadow-sm"
+    />
+  </div>
+</Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
