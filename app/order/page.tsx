@@ -12,7 +12,7 @@ const VEHICLE_OPTIONS = [
     icon: Bike,
     label: 'Motorcycle',
     desc: 'Small packages · 15–45 min',
-    price: 'From TSh 5,000',
+    price: 'From TSh 2,000',
   },
   {
     id: 'car',
