@@ -155,7 +155,7 @@ export default function Contact() {
                   Most customers reach us fastest via WhatsApp for quick orders and enquiries.
                 </p>
                 <a
-                  href="https://wa.me/255700000000"
+                  href="https://wa.me/255758689802"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
