@@ -139,11 +139,11 @@ export default function Header() {
 
           <div className="mt-4 pt-4 border-t border-alt">
             <Link
-              href="/track"
+              href="/order"
               onClick={() => setIsOpen(false)}
               className="flex items-center justify-center w-full py-2.5 bg-primary text-black text-sm font-semibold rounded-md hover:opacity-90 transition-opacity"
             >
-              Track Order
+              Place Order
             </Link>
           </div>
         </div>
