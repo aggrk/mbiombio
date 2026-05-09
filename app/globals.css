@@ -1,26 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-bg: #1a1a1a;
+  --color-alt: #2a2a2a;
+  --color-text: #f8f8f8;
+  --color-text-secondary: #e5d4bd;
+  --color-primary: #22c55e;
+  --color-accent: #f59e0b;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #1a1a1a;
+  --color-alt: #2a2a2a;
+  --color-text: #f8f8f8;
+  --color-text-secondary: #e5d4bd;
+  --color-primary: #22c55e;
+  --color-accent: #f59e0b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --color-bg: #1a1a1a;
+  --color-alt: #2a2a2a;
+  --color-text: #f8f8f8;
+  --color-text-secondary: #e5d4bd;
+  --color-primary: #22c55e;
+  --color-accent: #f59e0b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.light {
+  --color-bg: #f8f8f8;
+  --color-alt: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #4a3f35;
+  --color-primary: #15803d;
+  --color-accent: #c2410c;
+}
+
+html {
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
 }
