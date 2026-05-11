@@ -42,7 +42,7 @@ const CONTENT = {
     sunday: "Jumapili",
     openNow: "Huduma inapatikana sasa.",
     rights: `© ${new Date().getFullYear()} MbioMbio Delivery. Haki zote zimehifadhiwa.`,
-    madeFor: "Imetengenezwa kwa ajili Arusha 🇹🇿",
+    madeFor: "Kwa sasa tunapatikana Arusha 🇹🇿",
   },
 } as const;
 
