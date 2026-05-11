@@ -122,10 +122,10 @@ const CONTENT = {
     submitting: "Inatuma…",
     footerNote: "Tutakupigia simu au WhatsApp kukuthibitishia kabla ya kutuma.",
 
-    successTitle: "Agizo limepokelewa!",
+    successTitle: "Ombi limepokelewa!",
     successDesc:
-      "Tumepokea ombi lako. Mpishi atakuwa mahali pa kuchukua hivi karibuni. Tutawasiliana nawe kwa nambari uliyotoa.",
-    successBtn: "Weka agizo lingine",
+      "Tumepokea ombi lako. Muda si mrefu tutafika hapo. Tutawasiliana nawe kwa nambari uliyotoa.",
+    successBtn: "Agiza Tena.",
   },
 } as const;
 

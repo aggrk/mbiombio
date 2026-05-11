@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.mbiombio.com"; // ← replace with your real domain
+const BASE_URL = "https://www.mbiombio.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
