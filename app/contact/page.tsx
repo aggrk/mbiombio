@@ -206,18 +206,19 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left — contact details */}
             <div className="space-y-8">
-              {c.contactItems.map(({ label, lines, href }, i) => {
+              {c.contactItems.map((item, i) => {
                 const Icon = CONTACT_ICONS[i];
+                const href = "href" in item ? item.href : undefined;
                 return (
-                  <div key={label} className="flex gap-4">
+                  <div key={item.label} className="flex gap-4">
                     <div className="w-9 h-9 bg-primary/10 rounded-md flex items-center justify-center shrink-0 mt-0.5">
                       <Icon size={16} className="text-primary" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-1">
-                        {label}
+                        {item.label}
                       </p>
-                      {lines.map((line, j) =>
+                      {item.lines.map((line, j) =>
                         href?.[j] ? (
                           <a
                             key={j}
