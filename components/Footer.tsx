@@ -1,21 +1,60 @@
-import Link from 'next/link';
-import { MapPin, Phone, Mail, Package } from 'lucide-react';
+"use client";
 
-const NAV_LINKS = [
-  { href: '/about',    label: 'About Us' },
-  { href: '/services', label: 'Services' },
-  { href: '/track',    label: 'Track Order' },
-  { href: '/contact',  label: 'Contact' },
-];
+import Link from "next/link";
+import { MapPin, Phone, Mail, Package } from "lucide-react";
+import { useLanguage } from "@/lib/useLanguage";
+
+const CONTENT = {
+  en: {
+    tagline:
+      "Fast delivery across Arusha and Northern Tanzania. Fast, reliable, and handled with care.",
+    company: "Company",
+    navLinks: [
+      { href: "/about", label: "About Us" },
+      { href: "/services", label: "Services" },
+      { href: "/order", label: "Place Order" },
+      { href: "/contact", label: "Contact" },
+    ],
+    contactLabel: "Contact",
+    location: "Olasiti, Arusha, Tanzania",
+    hoursLabel: "Operating Hours",
+    monSat: "Mon – Sat",
+    sunday: "Sunday",
+    openNow: "Open now",
+    rights: `© ${new Date().getFullYear()} MbioMbio Delivery. All rights reserved.`,
+    madeFor: "Made for Arusha 🇹🇿",
+  },
+
+  sw: {
+    tagline:
+      "Usafirishaji mizigo kwa haraka kote Arusha na Tanzania ya Kaskazini. Usafirishaji wa haraka, wa kuaminika, na unaohudumiwa kwa uangalifu.",
+    company: "Kampuni",
+    navLinks: [
+      { href: "/about", label: "Kuhusu Sisi" },
+      { href: "/services", label: "Huduma" },
+      { href: "/order", label: "Agiza" },
+      { href: "/contact", label: "Mawasiliano" },
+    ],
+    contactLabel: "Mawasiliano",
+    location: "Olasiti, Arusha, Tanzania",
+    hoursLabel: "Masaa ya Kazi",
+    monSat: "Jumatatu – Jumamosi",
+    sunday: "Jumapili",
+    openNow: "Huduma inapatikana sasa.",
+    rights: `© ${new Date().getFullYear()} MbioMbio Delivery. Haki zote zimehifadhiwa.`,
+    madeFor: "Imetengenezwa kwa ajili Arusha 🇹🇿",
+  },
+} as const;
 
 export default function Footer() {
+  const { lang } = useLanguage();
+  const c = CONTENT[lang];
+
   return (
     <footer className="bg-alt border-t border-alt">
       <div className="max-w-7xl mx-auto px-6 pt-14 pb-8">
-
         {/* Grid */}
         <div className="grid md:grid-cols-4 gap-10 mb-12">
-
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
@@ -25,7 +64,7 @@ export default function Footer() {
               <div className="leading-none">
                 <span
                   className="block text-[17px] font-semibold tracking-tight text-text"
-                  style={{ fontFamily: 'var(--font-poppins), sans-serif' }}
+                  style={{ fontFamily: "var(--font-poppins), sans-serif" }}
                 >
                   MbioMbio
                 </span>
@@ -35,18 +74,17 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-text-secondary leading-relaxed">
-              Fast delivery across Arusha and Northern Tanzania.
-              Fast, reliable, and handled with care.
+              {c.tagline}
             </p>
           </div>
 
           {/* Company links */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-4">
-              Company
+              {c.company}
             </h3>
             <ul className="space-y-2.5">
-              {NAV_LINKS.map(({ href, label }) => (
+              {c.navLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
@@ -62,12 +100,12 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-4">
-              Contact
+              {c.contactLabel}
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-text-secondary">
                 <MapPin size={15} className="mt-0.5 shrink-0 text-primary" />
-                <span>Arusha, Tanzania</span>
+                <span>{c.location}</span>
               </li>
               <li>
                 <a
@@ -80,7 +118,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@mbiombio.co.tz"
+                  href="mailto:mbiombiodelivery@gmail.com"
                   className="flex items-center gap-2.5 text-sm text-text-secondary hover:text-text transition-colors"
                 >
                   <Mail size={15} className="shrink-0 text-primary" />
@@ -93,29 +131,31 @@ export default function Footer() {
           {/* Hours */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-4">
-              Operating Hours
+              {c.hoursLabel}
             </h3>
             <ul className="space-y-2 text-sm text-text-secondary">
               <li className="flex justify-between gap-4">
-                <span>Mon – Sat</span>
+                <span>{c.monSat}</span>
                 <span className="text-text">7:00 AM – 8:00 PM</span>
               </li>
               <li className="flex justify-between gap-4">
-                <span>Sunday</span>
+                <span>{c.sunday}</span>
                 <span className="text-text">8:00 AM – 6:00 PM</span>
               </li>
             </ul>
             <div className="mt-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-primary/10 border border-primary/20">
               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
-              <span className="text-xs font-medium text-primary">Open now</span>
+              <span className="text-xs font-medium text-primary">
+                {c.openNow}
+              </span>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="border-t border-alt pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-text-secondary">
-          <span>© {new Date().getFullYear()} MbioMbio Delivery. All rights reserved.</span>
-          <span>Made for Arusha 🇹🇿</span>
+          <span>{c.rights}</span>
+          <span>{c.madeFor}</span>
         </div>
       </div>
     </footer>
