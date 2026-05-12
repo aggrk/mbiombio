@@ -57,13 +57,13 @@ export const metadata: Metadata = {
   ],
 
   /* Canonical URL — replace with your real domain */
-  metadataBase: new URL("https://www.mbiombio.com"),
+  metadataBase: new URL("https://mbiombio.com"),
   alternates: {
     canonical: "/",
   },
 
   /* Authorship */
-  authors: [{ name: "MbioMbio Delivery", url: "https://www.mbiombio.com" }],
+  authors: [{ name: "MbioMbio Delivery", url: "https://mbiombio.com" }],
   creator: "MbioMbio Delivery",
   publisher: "MbioMbio Delivery",
 
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_TZ",
-    url: "https://www.mbiombio.com",
+    url: "https://mbiombio.com",
     siteName: "MbioMbio Delivery",
     title: "MbioMbio | Fastest Delivery Service in Arusha, Tanzania",
     description:
@@ -134,19 +134,19 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://www.mbiombio.com/#business",
+      "@id": "https://mbiombio.com/#business",
       name: "MbioMbio Delivery",
       alternateName: "MbioMbio",
       description:
         "Arusha's fastest delivery service. Motorcycle, car, and van deliveries across Arusha and Northern Tanzania with 15-minute pickup and live tracking.",
-      url: "https://www.mbiombio.com",
+      url: "https://mbiombio.com",
       telephone: "+255758689802",
       email: "info@mbiombio.com",
       priceRange: "TSh 5,000 – TSh 25,000",
       currenciesAccepted: "TZS",
       paymentAccepted: "Cash, Mobile Money",
       // image: "https://www.mbiombio.com/images/og-image.jpg",
-      logo: "https://www.mbiombio.com/images/logo.png",
+      logo: "https://mbiombio.com/images/logo.png",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Olasiti",
@@ -234,18 +234,18 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.mbiombio.com/#website",
-      url: "https://www.mbiombio.com",
+      "@id": "https://mbiombio.com/#website",
+      url: "https://mbiombio.com",
       name: "MbioMbio Delivery",
       description: "Arusha's fastest delivery service",
       publisher: {
-        "@id": "https://www.mbiombio.com/#business",
+        "@id": "https://mbiombio.com/#business",
       },
       potentialAction: {
         "@type": "SearchAction",
         target: {
           "@type": "EntryPoint",
-          urlTemplate: "https://www.mbiombio.com/?q={search_term_string}",
+          urlTemplate: "https://mbiombio.com/?q={search_term_string}",
         },
         "query-input": "required name=search_term_string",
       },
