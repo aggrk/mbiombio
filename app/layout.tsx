@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   /* Canonical URL — replace with your real domain */
   metadataBase: new URL("https://mbiombio.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://mbiombio.com",
   },
 
   /* Authorship */
@@ -145,7 +145,7 @@ const jsonLd = {
       priceRange: "TSh 5,000 – TSh 25,000",
       currenciesAccepted: "TZS",
       paymentAccepted: "Cash, Mobile Money",
-      // image: "https://www.mbiombio.com/images/og-image.jpg",
+      // image: "https://mbiombio.com/images/og-image.jpg",
       logo: "https://mbiombio.com/images/logo.png",
       address: {
         "@type": "PostalAddress",

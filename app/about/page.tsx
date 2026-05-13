@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { MapPin, PhoneCall, Shield, Clock } from "lucide-react";
 import { useLanguage } from "@/lib/useLanguage";
 
+export const metadata = {
+  title: "About MbioMbio | Arusha's Fastest Delivery Service",
+  description:
+    "Learn about MbioMbio — the delivery company built for Arusha, Tanzania. Fast pickups, local riders, and same-day delivery.",
+  alternates: { canonical: "https://mbiombio.com/about" },
+};
+
 const STAT_ICONS = [Clock, MapPin, Shield, PhoneCall];
 
 const CONTENT = {

@@ -5,6 +5,13 @@ import { Bike, Truck, Users, Clock } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/lib/useLanguage";
 
+export const metadata = {
+  title: "Delivery Services in Arusha | Motorcycle, Car & Van",
+  description:
+    "MbioMbio offers motorcycle, car, and van delivery services across Arusha and Northern Tanzania. Fast, reliable, and affordable.",
+  alternates: { canonical: "https://mbiombio.com/services" },
+};
+
 const SERVICE_ICONS = [Bike, Truck, Users, Clock];
 
 const CONTENT = {

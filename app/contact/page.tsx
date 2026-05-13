@@ -5,6 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "@/lib/useLanguage";
 
+export const metadata = {
+  title: "Contact MbioMbio | Arusha Delivery Service",
+  description:
+    "Get in touch with MbioMbio — Arusha's fastest delivery service. Call, WhatsApp, or send a message.",
+  alternates: { canonical: "https://mbiombio.com/contact" },
+};
+
 const CONTACT_ICONS = [MapPin, Phone, Mail, Clock];
 
 const CONTENT = {

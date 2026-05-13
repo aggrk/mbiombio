@@ -13,6 +13,11 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/lib/useLanguage";
 
+export const metadata = {
+  title: "MbioMbio | Fastest Delivery Service in Arusha, Tanzania",
+  alternates: { canonical: "https://mbiombio.com" },
+};
+
 // ── Translations ─────────────────────────────────────────────
 const CONTENT = {
   en: {
