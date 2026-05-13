@@ -5,13 +5,6 @@ import { motion } from "framer-motion";
 import { Bike, Truck, Users, MapPin, Package, CheckCircle } from "lucide-react";
 import { useLanguage } from "@/lib/useLanguage";
 
-export const metadata = {
-  title: "Place a Delivery Order in Arusha | MbioMbio",
-  description:
-    "Place a delivery order with MbioMbio. Choose motorcycle, car, or van delivery across Arusha. Pickup in under 15 minutes.",
-  alternates: { canonical: "https://mbiombio.com/order" },
-};
-
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xnjwgyky";
 
 const VEHICLE_ICONS = [Bike, Truck, Users];
