@@ -11,15 +11,15 @@ const CONTENT = {
     storyLabel: "Our story",
     heroTitle: ["Fast delivery,", "proudly Arusha."],
     heroDesc:
-      'MbioMbio means "fast" in Swahili — and that\'s exactly what we deliver.',
+      'MbioMbio means "fast" in Swahili; and that\'s exactly what we deliver.',
 
     storyTitle: "Built for Arusha",
     storyP1:
       "Founded in Arusha, we understand the streets, the traffic patterns, and the importance of speed in this growing city. What started as a small team of riders delivering for local businesses has grown into Arusha's most trusted delivery service.",
     storyP2:
-      "Every rider on our team is from the region. We know the shortcuts, the peak hours, and the neighbourhoods — because this is home.",
+      "Every rider on our team is from the region. We know the shortcuts, the peak hours, and the neighbourhoods. Because this is home.",
     quote:
-      "We didn't just build a delivery company — we built something Arusha could rely on. Every package we move matters.",
+      "We didn't just build a delivery company. We built something Arusha could rely on. Every package we move matters.",
     quoteAuthor: "— MbioMbio Founding Team",
 
     statsTitle: "By the numbers",
@@ -33,22 +33,22 @@ const CONTENT = {
     missionLabel: "Our mission",
     missionTitle: "Fast, reliable, and creating opportunity.",
     missionDesc:
-      "To provide the fastest, most reliable, and affordable delivery service in Northern Tanzania — while creating meaningful employment opportunities for young riders in Arusha.",
+      "To provide the fastest, most reliable, and affordable delivery service in Northern Tanzania; while creating meaningful employment opportunities for young riders in Arusha.",
   },
 
   sw: {
     storyLabel: "Kuhusu Sisi",
     heroTitle: ["Usafirishaji wa haraka,", "kwa fahari ya Arusha."],
     heroDesc:
-      'MbioMbio maana yake "haraka" kwa Kiswahili — na hiyo ndiyo huduma yetu, huduma ya haraka.',
+      'MbioMbio maana yake "haraka" kwa Kiswahili; na hiyo ndiyo huduma yetu, huduma ya haraka.',
 
     storyTitle: "Kwa ajili ya Arusha",
     storyP1:
       "Kwa sasa tumeanza na Arusha, kwakuwa tunajua barabara, mifumo ya msongamano, na umuhimu wa huduma ya usafirishaji wa haraka katika mji huu unaokua. Tulianza kama timu ndogo ya madereva wanaosafirisha mizigo kwa ajili ya biashara ndogo ndogo na kukua kuwa huduma ya usafirishaji inayoaminika zaidi Arusha.",
     storyP2:
-      "Kila dereva katika timu yetu ni mkazi wa Arusha wa muda mrefu. Tunajua njia za mkato, na mitaa — kwa sababu huku ndio kwetu.",
+      "Kila dereva katika timu yetu ni mkazi wa Arusha wa muda mrefu. Tunajua njia za mkato, na mitaa. Kwa sababu huku ndio kwetu.",
     quote:
-      "Hatujaanzisha kampuni ya usafirishaji tu — bali huduma ambayo wakazi wa Arusha wanaweza kuitegemea. Mteja kwetu ni mfalme.",
+      "Hatujaanzisha kampuni ya usafirishaji tu. Bali huduma ambayo wakazi wa Arusha wanaweza kuitegemea. Mteja kwetu ni mfalme.",
     quoteAuthor: "— Timu ya Waanzilishi wa MbioMbio",
 
     statsTitle: "Kwa takwimu",
@@ -72,7 +72,7 @@ const CONTENT = {
     missionTitle:
       "Kutoa huduma ya usafirishaji ya haraka, ya kuaminika, na kutengeneza fursa.",
     missionDesc:
-      "Kutoa huduma ya usafirishaji ya haraka, ya kuaminika zaidi, na ya bei nafuu — huku tukiunda fursa za ajira zenye maana kwa madereva vijana Arusha.",
+      "Kutoa huduma ya usafirishaji ya haraka, ya kuaminika zaidi, na ya bei nafuu; huku tukiunda fursa za ajira zenye maana kwa madereva vijana Arusha.",
   },
 } as const;
 

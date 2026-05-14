@@ -12,7 +12,7 @@ const CONTENT = {
     pageLabel: "What we offer",
     pageTitle: "Our Services",
     pageDesc:
-      "Reliable delivery solutions tailored for Arusha and Northern Tanzania — by motorcycle, car, or van.",
+      "Reliable delivery solutions tailored for Arusha and Northern Tanzania (by motorcycle, car, or van).",
 
     services: [
       {
@@ -53,7 +53,7 @@ const CONTENT = {
     pageLabel: "Tunachotoa",
     pageTitle: "Huduma Zetu",
     pageDesc:
-      "Suluhisho la usafirishaji linaloaminika kwa ajili ya Arusha na Tanzania ya Kaskazini — kwa pikipiki, au gari.",
+      "Suluhisho la usafirishaji linaloaminika kwa ajili ya Arusha na Tanzania ya Kaskazini (kwa pikipiki, au gari).",
 
     services: [
       {

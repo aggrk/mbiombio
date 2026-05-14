@@ -12,7 +12,7 @@ const CONTENT = {
     pageLabel: "Reach out",
     pageTitle: "Get in touch.",
     pageDesc:
-      "Questions, bulk orders, or partnership enquiries — we're here and quick to respond.",
+      "Questions, bulk orders, or partnership enquiries. We're here and quick to respond.",
 
     contactItems: [
       {
@@ -65,7 +65,7 @@ const CONTENT = {
     pageLabel: "Wasiliana nasi",
     pageTitle: "Tuwasiliane.",
     pageDesc:
-      "Maswali, kutoa Oda, au maombi ya ushirikiano — tuko hapa na tunajibu haraka.",
+      "Maswali, kutoa Oda, au maombi ya ushirikiano. Tuko hapa na tunajibu haraka.",
 
     contactItems: [
       {

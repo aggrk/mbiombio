@@ -48,14 +48,14 @@ const CONTENT = {
     labelDropoff: "Delivery address",
     dropoffPlaceholder: "e.g. Arusha City Center, Clock Tower",
     labelItem: "Item description",
-    itemPlaceholder: "e.g. Laptop in a bag, fragile — please handle with care",
+    itemPlaceholder: "e.g. Laptop in a bag, fragile. Please handle with care",
 
     sectionVehicle: "Vehicle type",
 
     sectionInstructions: "Special instructions",
     optionalLabel: "(optional)",
     instructionsPlaceholder:
-      "Anything the rider should know — gate code, fragile items, call before arrival, etc.",
+      "Anything the rider should know (gate code, fragile items, call before arrival, etc).",
 
     errorMsg: "Something went wrong. Please try again or reach us on WhatsApp.",
     submitBtn: "Place Order",
@@ -107,14 +107,14 @@ const CONTENT = {
     dropoffPlaceholder: "mfano: Katikati ya Mji wa Arusha, Clock Tower",
     labelItem: "Maelezo ya Mzigo",
     itemPlaceholder:
-      "mfano: Kompyuta ndogo kwenye mfuko, inahitaji umakini — tafadhali shughulikia kwa uangalifu",
+      "mfano: Kompyuta ndogo kwenye mfuko, inahitaji umakini. Tafadhali shughulikia kwa uangalifu",
 
     sectionVehicle: "Aina ya Usafiri",
 
     sectionInstructions: "Maelekezo maalum",
     optionalLabel: "(hiari)",
     instructionsPlaceholder:
-      "Chochote ambacho dereva anapaswa kujua — maelezo ya ziada kuhusu mzigo, piga simu kabla ya kuwasili, n.k.",
+      "Chochote ambacho dereva anapaswa kujua (maelezo ya ziada kuhusu mzigo, piga simu kabla ya kuwasili, n.k).",
 
     errorMsg:
       "Kuna hitilafu. Tafadhali jaribu tena au tuwasiliane kupitia WhatsApp.",

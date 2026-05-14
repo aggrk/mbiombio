@@ -36,7 +36,7 @@ const CONTENT = {
     steps: [
       {
         title: "Place your order",
-        desc: "Via WhatsApp, our app, or website — takes under a minute.",
+        desc: "Via WhatsApp, our app, or website. Takes under a minute.",
       },
       {
         title: "Fast pickup",
@@ -110,7 +110,7 @@ const CONTENT = {
     steps: [
       {
         title: "Weka Oda",
-        desc: "Kupitia WhatsApp, programu yetu, au tovuti — inachukua chini ya dakika moja.",
+        desc: "Kupitia WhatsApp, programu yetu, au tovuti. Inachukua chini ya dakika moja.",
       },
       {
         title: "Dereva Kuchukua mzigo kwa haraka",
