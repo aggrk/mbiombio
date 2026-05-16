@@ -41,7 +41,7 @@ const CONTENT = {
       },
     ],
 
-    timeLabel: "Est. time",
+    timeLabel: "time",
     priceLabel: "Starting from",
 
     ctaTitle: "Ready to place an order?",
