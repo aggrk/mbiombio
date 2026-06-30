@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, Phone, Mail, Package } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/lib/useLanguage";
+import { useTheme } from "next-themes";
 
 const CONTENT = {
   en: {
@@ -48,7 +49,9 @@ const CONTENT = {
 
 export default function Footer() {
   const { lang } = useLanguage();
+  const { setTheme, resolvedTheme } = useTheme();
   const c = CONTENT[lang];
+  const isLight = resolvedTheme === "light";
 
   return (
     <footer className="bg-alt border-t border-alt">
@@ -58,8 +61,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center shrink-0">
-                <Package size={16} className="text-black" strokeWidth={2.5} />
+              <div
+                className={`w-14 h-14 shrink-0 rounded-lg overflow-hidden ${isLight && "bg-alt"} bg-white p-1`}
+              >
+                <img
+                  src="/images/logo.png"
+                  alt="MbioMbio Delivery"
+                  className="w-full h-full object-contain drop-shadow-sm"
+                />
               </div>
               <div className="leading-none">
                 <span
